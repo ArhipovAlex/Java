@@ -14,7 +14,7 @@ public class Main {
 //            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
 //            System.out.println("i = " + i);
 //        }
-        System.out.println();
+/*        System.out.println();
         //boolean condition = true;
         //System.out.println(condition);
         //System.out.println(Boolean.TYPE);
@@ -93,6 +93,31 @@ public class Main {
                 break;
             default:
                 System.out.println("неверная команда");
+        }*/
+        Scanner kb = new Scanner(System.in);
+        System.out.println("Расчет даты Пасхи по Гауссу. Введите год: ");
+        int year = kb.nextInt();
+        int a = year%19;
+        int b = year%4;
+        int c = year%7;
+        int d = (19*a+15)%30;
+        int e = (2*b+4*c+6*d+6)%7;
+        int f = d+e;
+        if (f<=26)
+            System.out.println("Пасха будет "+(4+f)+" апреля");
+        else System.out.println("Пасха будет "+(f-26)+" мая");
+        System.out.println("Проверка числа на палиндром.");
+        System.out.println(Palindrome.isPalindrome("12321"));
+        System.out.println("Вывод предела Фибоначчи. Введите предел ряда: ");
+        int n = kb.nextInt();
+        int[] arr = new int[n];
+        arr[0] = 0;
+        arr[1] = 1;
+        for (int i = 2; i < arr.length; ++i) {
+            arr[i] = arr[i - 1] + arr[i - 2];
+        }
+        for (int i = 0; i < arr.length; ++i) {
+            System.out.println(arr[i]);
         }
     }
 }
