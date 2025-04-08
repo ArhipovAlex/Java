@@ -1,4 +1,4 @@
-package org.example;
+/*package org.example;
 
 import java.sql.*;
 
@@ -39,9 +39,6 @@ public class Connector {
             ResultSetMetaData metaData = resultSet.getMetaData();
 
             while (resultSet.next()) {
-                /*byte id = resultSet.getByte("direction_id");
-                String name = resultSet.getNString("direction_name");
-                System.out.println(id + "\t" + name);*/
                 for(int i=1;i<=metaData.getColumnCount(); i++){
                     System.out.print(resultSet.getObject(i) + "\t");
                 }
@@ -56,4 +53,4 @@ public class Connector {
         }
 
     }
-}
+}*/
