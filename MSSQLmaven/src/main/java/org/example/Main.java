@@ -11,28 +11,25 @@ import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
         String connectionString =
-                "jdbc:sqlserver://localhost:1433;"+
-                        "DataSource=DESKTOP-CU1U64A;" +
-                        "Database=PD_212;" +
-                        "user=PHP;" +
-                        "password=111;" +
-                        "ConnectTimeout=30;Encrypt=True;" +
-                        "TrustServerCertificate=True;";
-        try(Connection connection = DriverManager.getConnection(connectionString))
-        {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM Directions");
-            while (resultSet.next()){
-                byte id = resultSet.getByte("direction_id");
-                String name = resultSet.getNString("direction_name");
-                System.out.println(id + "\t" + name);
-            }
-        }
-        catch (SQLException e)
-        {
-            e.printStackTrace();
-        }
+        "jdbc:sqlserver://localhost:1433;"+
+                "DataSource=DESKTOP-CU1U64A;" +
+                "Database=PD_212;" +
+                "user=PHP;" +
+                "password=111;" +
+                "ConnectTimeout=30;Encrypt=True;" +
+                "TrustServerCertificate=True;";
+        Connector connector = new Connector(connectionString);
+        String query =
+                "SELECT " +
+                        "FORMATMESSAGE(N'%s %s %s', last_name, first_name, middle_name) AS N'Студент', "+
+                        "group_name, "+
+                        "direction_name "+
+                        "FROM Students JOIN Groups ON ([group]=group_id) JOIN Directions ON (direction=direction_id)";
+        System.out.println(query);
+        String scalarQuery = "SELECT COUNT(*) FROM Students";
+        System.out.println(connector.Scalar(scalarQuery));
+        connector.Select(query);
+
     }
 }
