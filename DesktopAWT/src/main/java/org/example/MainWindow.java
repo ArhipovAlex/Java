@@ -2,8 +2,18 @@ package org.example;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 public class MainWindow extends Frame {
+    Label lblLastName = new Label("Last Name: ");
+    Label lblFirstName = new Label("First Name: ");
+    Label lblBirthDate = new Label("Birth Date: ");
+    Label results = new Label("Results");
+
+    TextField textLastName = new TextField();
+    TextField textFirstName = new TextField();
+    TextField textBirthDate = new TextField();
+
     public MainWindow() throws HeadlessException{
         this.setBounds(200,200,400,300);
         this.setTitle("AWT - Abstract Window Toolkit");
@@ -11,18 +21,11 @@ public class MainWindow extends Frame {
         button = new Button("Button");
         button.setBounds(50,50,100,50);
         add(button);*/
-        Label lblLastName = new Label("Last Name: ");
-        Label lblFirstName = new Label("First Name: ");
-        Label lblBirthDate = new Label("Birth Date: ");
-
-        TextField textLastName = new TextField();
-        TextField textFirstName = new TextField();
-        TextField textBirthDate = new TextField();
 
         Button btnSubmit = new Button("Submit");
         Button btnReset = new Button("Reset");
 
-        lblLastName.setBounds(10,50,100,32);
+/*        lblLastName.setBounds(10,50,100,32);
         lblFirstName.setBounds(10,100,100,32);
         lblBirthDate.setBounds(10,150,100,32);
 
@@ -31,20 +34,31 @@ public class MainWindow extends Frame {
         textBirthDate.setBounds(200,150,100,24);
 
         btnSubmit.setBounds(10,200,100,50);
-        btnReset.setBounds(200,200,100,50);
+        btnReset.setBounds(200,200,100,50);*/
 
         this.add(lblLastName);
-        this.add(lblFirstName);
-        this.add(lblBirthDate);
-
         this.add(textLastName);
+
+        this.add(lblFirstName);
         this.add(textFirstName);
+
+        this.add(lblBirthDate);
         this.add(textBirthDate);
 
         this.add(btnSubmit);
         this.add(btnReset);
 
-        this.setLayout(null);
+        this.add(results);
+
+        btnSubmit.addActionListener(this::btnSubmitHandler);
+
+        GridLayout grid = new GridLayout(5,2,10,30);
+        this.setLayout(grid);
         this.setVisible(true);
+    }
+    public void btnSubmitHandler(ActionEvent e)
+    {
+        String results = textLastName.getText() + " " + textFirstName.getText() + " " + textBirthDate.getText();
+        this.results.setText(results);
     }
 }
