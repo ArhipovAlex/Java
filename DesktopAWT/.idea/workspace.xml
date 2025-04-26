@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c8c9451-00db-4cfd-b6bc-c268f2a4679a" name="Changes" comment="AWT DONE" />
+    <list default="true" id="8c8c9451-00db-4cfd-b6bc-c268f2a4679a" name="Changes" comment="MainWindowCopy">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at__12_04_25_18_54__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_сб_12_04_25_18_54_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,18 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/liney/source/repos/PD_321_JavaOK/DesktopJavaFX"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b6d6be27-edea-4b85-bc23-518d9ff7710b" name="Changes" comment="" />
+      <changelist id="8c8c9451-00db-4cfd-b6bc-c268f2a4679a" name="Changes" comment="MainWindowCopy" />
       <created>1744419600069</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -86,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744426615490</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MainWindowCopy">
+      <option name="closed" value="true" />
+      <created>1744457462331</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744457462331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,6 +108,7 @@
     <MESSAGE value="AWT form text fields DONE" />
     <MESSAGE value="AWT DONE" />
     <MESSAGE value="Main class trouble" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main class trouble" />
+    <MESSAGE value="MainWindowCopy" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainWindowCopy" />
   </component>
 </project>

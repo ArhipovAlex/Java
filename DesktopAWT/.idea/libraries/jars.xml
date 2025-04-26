@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="jars">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Program Files/Microsoft JDBC DRIVER 12.10 for SQL Server/rus/jars" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Microsoft JDBC DRIVER 12.10 for SQL Server/rus/jars/mssql-jdbc-12.10.0.jre11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../Program Files/Microsoft JDBC DRIVER 12.10 for SQL Server/rus/jars" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../Program Files/Microsoft JDBC DRIVER 12.10 for SQL Server/rus/jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Program Files/Microsoft JDBC DRIVER 12.10 for SQL Server/rus/jars" recursive="false" type="SOURCES" />
+  </library>
+</component>
